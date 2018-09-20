@@ -1,0 +1,30 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">{{ pesan }}</h3>
+    </div>
+    <div class="panel-body">  
+        <p>
+            No Siswa : {{ detaildatasiswa[0].nis }}
+        </p>
+        <p>
+            Nama : {{ detaildatasiswa[0].nama }}
+        </p>
+        <p>
+            Alamat : {{ detaildatasiswa[0].alamat }}
+        </p>
+        <p>
+          Tahun Masuk : {{ detaildatasiswa[0].thn_masuk }}
+        </p>
+        <p class="text-right">
+           <a href="index.html#/siswa/">
+              <buttton class="btn btn-sm btn-primary">Kembali</buttton>
+           </a> 
+        </p>
+     </div>   
+</div>
+
+<!--
+karena cuma satu record tidak berulangan maka kita gunakan 
+detaildatasiswa[0]
+-->
+

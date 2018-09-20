@@ -1,0 +1,27 @@
+<div class="badge badge-info">{{ pesan }} </div><br/><br />
+
+<table class="table table-striped table-bordered table-responsive">
+    <thead>  
+        <tr>
+            <th>SiswaID</th>
+            <th>NIS</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Tahun Masuk</th>
+            <th class="text-center">Aksi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="ds in datasiswa">
+            <td>{{ ds.siswaid }}</td>
+            <td>{{ ds.nis }}</td>
+            <td>{{ ds.nama }}</td>
+            <td>{{ ds.alamat }}</td>
+            <td>{{ ds.thn_masuk }}</td>
+            <td class="text-center">
+            <a href="index.html#/siswa/{{ ds.siswaid }}"<button class="btn btn-sm btn-success">Detail</button></td>  
+        </tr>
+    </tbody>
+</table> 
+
+
